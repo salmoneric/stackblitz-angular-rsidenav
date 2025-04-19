@@ -1,0 +1,5 @@
+<!-- MAIN -->
+<app-header (toggleSideNavClick)="onToggleSideNavClicked($event)"></app-header>
+<app-rsidenav [toggleSideNavFromParent]="toggleChildSideNav"></app-rsidenav>
+<app-content></app-content>
+<router-outlet />
