@@ -4,8 +4,12 @@
   height: 60px;
   display: flex;
   justify-content: space-between;
-
   padding: 0 20px;
+  position: sticky; /* Makes the header sticky */
+  top: 0; /* Sticks the header to the top of the viewport */
+  z-index: 1000; /* Ensures the header stays above other content */
+  box-sizing: border-box; /* Ensures padding and borders are included in height */
+  margin-top: -8px; /* Counteracts the body's default margin */
 }
 
 .main-nav-list li {
@@ -21,4 +25,8 @@
   text-decoration: none;
   font-size: 14px;
   text-transform: uppercase;
+}
+.wrap-btn {
+  margin: 1rem 0;
+  cursor: pointer;
 }
