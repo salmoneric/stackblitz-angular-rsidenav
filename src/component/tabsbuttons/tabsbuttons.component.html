@@ -1,0 +1,16 @@
+<div class="tabs-container">
+  <div class="tabs">
+    <button
+      [class.active]="activeTab === 'mind'"
+      (click)="setActiveTab('mind')"
+    >
+      Mind
+    </button>
+    <button
+      [class.active]="activeTab === 'belief'"
+      (click)="setActiveTab('belief')"
+    >
+      Belief
+    </button>
+  </div>
+</div>
