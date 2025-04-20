@@ -1,22 +1,22 @@
-import { Component, ViewChild } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from '../component/header/header.component';
-import { ContentComponent } from '../component/content/content.component';
-import { RsidenavComponent } from '../component/rsidenav/rsidenav.component';
+import { Component, ViewChild } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
+import { HeaderComponent } from "../component/header/header.component";
+import { RsidenavComponent } from "../component/rsidenav/rsidenav.component";
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, ContentComponent, RsidenavComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  selector: "app-root",
+  standalone: true,
+  imports: [RouterOutlet, HeaderComponent, RsidenavComponent],
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-  title = 'rsidenav';
+  title = "rsidenav";
   toggleChildSideNav: Boolean = false;
   @ViewChild(RsidenavComponent) rsidenavComponent!: RsidenavComponent;
 
   onToggleSideNavClicked($event: void) {
-    console.log('AppComponent: onToggleSideNavClicked()');
+    console.log("AppComponent: onToggleSideNavClicked()");
     this.toggleChildSideNav = !this.toggleChildSideNav;
   }
 }

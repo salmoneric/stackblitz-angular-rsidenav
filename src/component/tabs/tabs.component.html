@@ -1,0 +1,34 @@
+<div class="philosophy-content">
+  <div class="tabs">
+    <button 
+      [class.active]="activeTab === 'mind'"
+      (click)="setActiveTab('mind')">
+      Mind
+    </button>
+    <button 
+      [class.active]="activeTab === 'belief'"
+      (click)="setActiveTab('belief')">
+      Belief
+    </button>
+  </div>
+
+  <div class="tab-content" *ngIf="activeTab === 'mind'">
+    <h2>Philosophy of Mind</h2>
+    <p>
+      The mind-body problem has been a central question in philosophy since Descartes. How does consciousness arise from physical matter? This fundamental question has led to various theories, from dualism to materialism, each attempting to bridge the explanatory gap between subjective experience and objective reality.
+    </p>
+    <p>
+      Modern philosophers continue to debate whether consciousness can be fully explained through physical processes alone, or if there's something more fundamental about subjective experience that transcends purely materialistic explanations.
+    </p>
+  </div>
+
+  <div class="tab-content" *ngIf="activeTab === 'belief'">
+    <h2>Philosophy of Belief</h2>
+    <p>
+      The nature of belief and its relationship to knowledge has been a cornerstone of epistemological inquiry. What justifies our beliefs? How do we distinguish between belief and knowledge? These questions have profound implications for our understanding of truth and rationality.
+    </p>
+    <p>
+      Contemporary discussions often focus on the role of evidence in belief formation, the ethics of belief, and the social dimensions of belief systems. Philosophers examine how beliefs shape our perception of reality and influence our decision-making processes.
+    </p>
+  </div>
+</div>

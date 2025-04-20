@@ -3,6 +3,7 @@ import { Component, Input, SimpleChanges } from "@angular/core";
 
 @Component({
   selector: "app-rsidenav",
+  standalone: true,
   imports: [NgClass],
   templateUrl: "./rsidenav.component.html",
   styleUrl: "./rsidenav.component.scss",
