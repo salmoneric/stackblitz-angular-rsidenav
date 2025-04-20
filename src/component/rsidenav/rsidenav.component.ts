@@ -1,10 +1,11 @@
 import { NgClass } from "@angular/common";
 import { Component, Input, SimpleChanges } from "@angular/core";
+import { TabsComponent } from "../tabs/tabs.component";
 
 @Component({
   selector: "app-rsidenav",
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, TabsComponent],
   templateUrl: "./rsidenav.component.html",
   styleUrl: "./rsidenav.component.scss",
 })

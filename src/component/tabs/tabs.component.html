@@ -1,13 +1,15 @@
-<div class="philosophy-content">
+<div class="tabs-container">
   <div class="tabs">
-    <button 
+    <button
       [class.active]="activeTab === 'mind'"
-      (click)="setActiveTab('mind')">
+      (click)="setActiveTab('mind')"
+    >
       Mind
     </button>
-    <button 
+    <button
       [class.active]="activeTab === 'belief'"
-      (click)="setActiveTab('belief')">
+      (click)="setActiveTab('belief')"
+    >
       Belief
     </button>
   </div>
@@ -15,20 +17,105 @@
   <div class="tab-content" *ngIf="activeTab === 'mind'">
     <h2>Philosophy of Mind</h2>
     <p>
-      The mind-body problem has been a central question in philosophy since Descartes. How does consciousness arise from physical matter? This fundamental question has led to various theories, from dualism to materialism, each attempting to bridge the explanatory gap between subjective experience and objective reality.
+      The mind-body problem has been a central question in philosophy since
+      Descartes. How does consciousness arise from physical matter? This
+      fundamental question has led to various theories, from dualism to
+      materialism, each attempting to bridge the explanatory gap between
+      subjective experience and objective reality.
     </p>
     <p>
-      Modern philosophers continue to debate whether consciousness can be fully explained through physical processes alone, or if there's something more fundamental about subjective experience that transcends purely materialistic explanations.
+      Modern philosophers continue to debate whether consciousness can be fully
+      explained through physical processes alone, or if there's something more
+      fundamental about subjective experience that transcends purely
+      materialistic explanations.
+    </p>
+    <p>
+      The implications of these discussions extend beyond philosophy,
+      influencing fields such as cognitive science, artificial intelligence, and
+      ethics. Understanding the nature of the mind is crucial for addressing
+      questions about free will, moral responsibility, and the nature of
+      personal identity.
+    </p>
+    <p>
+      <strong>Panpsychism</strong> offers a radically different perspective,
+      proposing that consciousness is a fundamental feature of the universe,
+      present even at the most basic levels of matter. According to this view,
+      electrons, atoms, or even particles might possess some rudimentary form of
+      experience. While panpsychism avoids the problem of explaining how
+      consciousness emerges from entirely non-conscious matter, critics argue
+      that it is difficult to test and seems counterintuitive—how could
+      inanimate particles have any form of inner life?
+    </p>
+    <p>
+      Meanwhile, <strong>idealism</strong> flips the traditional mind-body
+      debate by asserting that reality is fundamentally mental. In this view,
+      the physical world is dependent on or even an illusion within
+      consciousness itself. Some modern interpretations, such as
+      <strong>cosmopsychism</strong>, extend this idea by suggesting that the
+      universe as a whole is conscious, and individual minds are fragments of
+      this cosmic awareness. While idealism elegantly sidesteps the problem of
+      explaining how matter produces mind, it faces skepticism from those who
+      see the physical world as undeniably real and independent of perception.
+    </p>
+    Neuroscience has made significant strides in mapping brain activity to
+    conscious experience, yet the <strong>explanatory gap</strong>strong>
+    persists. Even if we fully understand which neural correlates correspond to
+    specific thoughts or sensations, we still lack an explanation for why those
+    processes should feel like anything at all. Some philosophers, like Daniel
+    Dennett, argue that this gap is an illusion—that once we fully describe the
+    brain’s workings, there will be no further mystery. Others, like Thomas
+    Nagel, insist that subjective experience presents a unique challenge that
+    purely objective science cannot fully capture.
+    <p>
+      Advances in <strong>artificial intelligence</strong> have further
+      complicated the debate. If a machine were to replicate human-like
+      cognition, would it also possess consciousness? Or would it merely
+      simulate understanding without genuine experience? This raises ethical
+      questions: if consciousness is what grants moral value, how do we
+      determine whether an AI is truly conscious? The possibility of synthetic
+      minds forces us to reconsider what it means to be a subject of experience
+      in the first place.
+    </p>
+    <p>
+      Some thinkers advocate for <strong>non-reductive physicalism</strong>, a
+      middle-ground position that acknowledges consciousness as dependent on
+      physical processes but not entirely reducible to them. This view allows
+      for mental properties to be *emergent*—arising from complex interactions
+      in the brain without being identical to them. However, critics argue that
+      this still does not fully resolve the hard problem; it merely relabels the
+      mystery rather than explaining it.
+    </p>
+    The mind-body problem also intersects with <strong>free will</strong>. If
+    consciousness is purely the product of deterministic brain processes, does
+    that mean our sense of agency is an illusion? Some philosophers, like
+    Patricia Churchland, argue that free will is compatible with
+    neuroscience—what we call "choice" is simply the brain’s higher-level
+    decision-making process. Others, like Galen Strawson, contend that true free
+    will is impossible if all mental events are causally determined by prior
+    physical events.
+    <p>
+      Ultimately, the mind-body problem remains unresolved, with each theory
+      offering partial insights but leaving key questions unanswered. As science
+      and philosophy continue to evolve, new perspectives may emerge—perhaps
+      even ones that transcend the current frameworks altogether. Until then,
+      the nature of consciousness remains one of the deepest and most enduring
+      mysteries of human existence.
     </p>
   </div>
 
   <div class="tab-content" *ngIf="activeTab === 'belief'">
     <h2>Philosophy of Belief</h2>
     <p>
-      The nature of belief and its relationship to knowledge has been a cornerstone of epistemological inquiry. What justifies our beliefs? How do we distinguish between belief and knowledge? These questions have profound implications for our understanding of truth and rationality.
+      The nature of belief and its relationship to knowledge has been a
+      cornerstone of epistemological inquiry. What justifies our beliefs? How do
+      we distinguish between belief and knowledge? These questions have profound
+      implications for our understanding of truth and rationality.
     </p>
     <p>
-      Contemporary discussions often focus on the role of evidence in belief formation, the ethics of belief, and the social dimensions of belief systems. Philosophers examine how beliefs shape our perception of reality and influence our decision-making processes.
+      Contemporary discussions often focus on the role of evidence in belief
+      formation, the ethics of belief, and the social dimensions of belief
+      systems. Philosophers examine how beliefs shape our perception of reality
+      and influence our decision-making processes.
     </p>
   </div>
 </div>
