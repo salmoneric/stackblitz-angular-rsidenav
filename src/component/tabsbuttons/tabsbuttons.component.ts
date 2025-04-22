@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
 @Component({
@@ -9,9 +9,10 @@ import { CommonModule } from "@angular/common";
   styleUrl: "./tabsbuttons.component.scss",
 })
 export class TabsbuttonsComponent {
-  activeTab: string = "mind";
+  @Input() activeTab: string = 'mind';
+  @Output() tabChange = new EventEmitter<string>();
 
   setActiveTab(tab: string) {
-    this.activeTab = tab;
+    this.tabChange.emit(tab);
   }
 }

@@ -12,8 +12,11 @@
       </button>
     </div>
 
+      <app-tabsbuttons [activeTab]="activeTab" (tabChange)="onTabChange($event)"></app-tabsbuttons>
+
     <div class="innav">
-      <app-tabs></app-tabs>
+      <app-tabscontents [activeTab]="activeTab"></app-tabscontents>
     </div>
+
   </div>
 </div>
